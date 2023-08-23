@@ -2,23 +2,23 @@
 
 @font-face {
     font-family: "현대폰트";
-    src: url(/font/현대하모니+L.ttf);
+    src: url(../font/현대하모니+L.ttf);
 }
 
 @font-face {
     font-family: "현대폰트m";
-    src: url(/font/현대하모니+M.ttf);
+    src: url(../font/현대하모니+M.ttf);
 }
 
 
 @font-face {
     font-family: "나눔고딕";
-    src: url(/font/NanumGothic-Regular.ttf);
+    src: url(../font/NanumGothic-Regular.ttf);
 }
 
 @font-face {
     font-family: "나눔고딕bold";
-    src: url(/font/NanumGothic-Bold.ttf);
+    src: url(../font/NanumGothic-Bold.ttf);
 }
 
 html {
@@ -37,7 +37,9 @@ li {
     font-size: 17px;
 }
 
-
+a {
+    color: black;
+}
 
 
 body {
@@ -50,7 +52,7 @@ section {
 
 header {
     position: fixed;
-    background-image: url(/pictures/bgc투명.png);
+    background-image: url(../pictures/bgc투명.png);
     height: 80px;
     width: 100%;
     z-index: 10;
@@ -749,7 +751,7 @@ footer {
 
 .bodyMenu1 {
     margin: 150px;
-    background-image: url(/pictures/충전.png);
+    background-image: url(../pictures/충전.png);
     background-size: cover;
     height: 800px;
     background-repeat: no-repeat;
@@ -848,7 +850,7 @@ footer {
 
 
 #bm4 {
-    background-image: url(/pictures/아이오닉1.gif);
+    background-image: url(../pictures/아이오닉1.gif);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "현대폰트";
@@ -918,14 +920,14 @@ footer {
 
 
 #bm6 {
-    background-image: url(/pictures/아이오닉3.gif);
+    background-image: url(../pictures/아이오닉3.gif);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #bm7 {
-    background-image: url(/pictures/아이오닉4.gif);
+    background-image: url(../pictures/아이오닉4.gif);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1031,12 +1033,12 @@ footer {
 
 }
 
-#adSlider>li>#adbgc1,
-#adSlider>li>#adbgc2,
-#adSlider>li>#adbgc3,
-#adSlider>li>#adbgc4,
-#adSlider>li>#adbgc5,
-#adSlider>li>#adbgc6 {
+#adbgc1,
+#adbgc2,
+#adbgc3,
+#adbgc4,
+#adbgc5,
+#adbgc6 {
     position: absolute;
     display: none;
     width: 635px;

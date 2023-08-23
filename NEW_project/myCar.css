@@ -2,43 +2,50 @@
 
 @font-face {
     font-family: "현대폰트";
-    src: url(/font/현대하모니+L.ttf);
+    src: url(../font/현대하모니+L.ttf);
 }
 
 @font-face {
     font-family: "현대폰트m";
-    src: url(/font/현대하모니+M.ttf);
+    src: url(../font/현대하모니+M.ttf);
 }
 
 
 @font-face {
     font-family: "나눔고딕";
-    src: url(/font/NanumGothic-Regular.ttf);
+    src: url(../font/NanumGothic-Regular.ttf);
 }
 
 @font-face {
-    font-family: "나눔고딕bold";
-    src: url(/font/NanumGothic-Bold.ttf);
+    font-family: "test";
+    src: url(../font/hyundainormal.ttf);
 }
+
+
 
 body {
     font-family: "현대폰트";
     font-size: 16px;
-    font-weight: 600;
 }
 
 
 /***********************************************************************/
 
+a {
+    color: black;
+}
+
 header {
     position: fixed;
-    background-image: url(/pictures/bgc투명.png);
+    background-image: url(../pictures/bgc투명.png);
     background-color: white;
     height: 80px;
     width: 100%;
     margin-top: 0px;
     z-index: 10;
 }
+
+
 
 .headerContainer {
     height: 80px;
@@ -64,6 +71,8 @@ header {
 /* 메인[일반메뉴1 div] */
 #mainLogo {
     cursor: pointer;
+    width: 250px;
+    height: 30px;
     margin-left: 250px;
     margin-top: 25px;
 
@@ -88,9 +97,9 @@ header {
 
 
 
-.headerContainer>.boxContainer>li {
+.headerContainer>.boxContainer>a>li {
     font-family: "현대폰트";
-    font-size: 17PX;
+    font-size: 17px;
     margin-left: 15px;
     margin-right: 15px;
     cursor: pointer;
@@ -200,7 +209,7 @@ a {
     text-align: center;
     padding: 25px;
     margin: auto;
-    background-image: url(/projectImg/bg_visual_cloud.png);
+    background-image: url(../projectImg/bg_visual_cloud.png);
     background-position: 50%;
     background-repeat: no-repeat;
 }
@@ -299,6 +308,7 @@ a {
 
 .h3 {
     margin-left: 140px;
+    font-weight: 600;
     font-size: 20px;
 }
 
@@ -332,6 +342,7 @@ a {
 .suv>a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+
     padding: 20px;
 }
 
@@ -346,7 +357,8 @@ a {
 .hyd>a>h3,
 .sedan>a>h3,
 .suv>a>h3 {
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .hyd>a>p,
@@ -486,7 +498,29 @@ footer {
 
 /*****************************************************************************/
 
+#loadingBox1 {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../pictures/로딩.gif);
+    background-position: 75px 25px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    top: 15%;
+    right: 43%;
+    width: 250px;
+    height: 150px;
+    z-index: 10;
+}
 
+#loadingBox1>h1 {
+    font-family: '현대폰트m';
+    font-style: oblique;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 90px;
+}
 
 
 

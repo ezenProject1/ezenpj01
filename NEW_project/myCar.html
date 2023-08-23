@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내차만들기</title>
-    <link rel="stylesheet" href="/project/myCar.css">
+    <link rel="stylesheet" href="../NEW_project/myCar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
@@ -13,28 +13,37 @@
     <header>
         <div class="headerContainer" id="headerContainer">
 
-
-            <a href="/NEW_project/main.html"><img id="mainLogo" src="/pictures/logo.png" alt="" width="160"
+            <a href="../NEW_project/main.html"><img id="mainLogo" src="../pictures/logo.png" alt="" width="160"
                     height="25"></a>
             <ul class="boxContainer">
-                <li>모델</li>
-                <li>구매/이벤트</li>
-                <li>서비스/멤버십</li>
-                <li>디지털/고객지원</li>
-                <li>브랜드</li>
-                <li><img src="/pictures/현대샵.png" alt=""></li>
+                <a href="../NEW_project/myCar.html">
+                    <li>모델</li>
+                </a>
+                <a href="../globalEventPage/globalEvent.html">
+                    <li>이벤트</li>
+                </a>
+                <a href="">
+                    <li>서비스/멤버십</li>
+                </a>
+                <a href="../loginPage/230822_customperfect.html">
+                    <li>디지털/고객지원</li>
+                </a>
+                <a href="">
+                    <li>브랜드</li>
+                </a>
+                <li><img src="../pictures/현대샵.png" alt=""></li>
             </ul>
 
 
             <ul class="loginContainer" id="loginContainer">
                 <li>전기-수소차<span id="lgText">보조금조회</span></li>
                 <li>KR</li>
-                <li><img onclick="mainLoginList()" id="loginPage" src="/pictures/마이페이지.png" alt=""></li>
+                <li><img onclick="mainLoginList()" id="loginPage" src="../pictures/마이페이지.png" alt=""></li>
                 <ul id="loginPageList">
-                    <li><a href="https://prd.kr-ccapi.hyundai.com/web/v1/user/signin">개인 로그인 ></a></li>
+                    <li><a href="../loginPage/230822_loginperfect.html">개인 로그인 ></a></li>
                     <li>법인 로그인 ></li>
                 </ul>
-                <li><img onclick="mainSearch()" src="/pictures/돋보기.png" alt=""></li>
+                <li><img onclick="mainSearch()" src="../pictures/돋보기.png" alt=""></li>
                 <li><i class="bi bi-list"></i></li>
             </ul>
 
@@ -48,13 +57,13 @@
         <div id="bgcOverray">
             <!-- 검색창 켰을때 배경 어둡게하는 오버레이 -->
         </div>
+
+
     </header>
 
 
-
-
-
     <div class="content">
+
         <div class="bg">
             <div class="sub_menu">
                 <ul>
@@ -83,44 +92,48 @@
         </div>
 
         <div class="carContainer">
+            <div id="loadingBox1">
+                <h1>잠시만 기다려주세요.</h1>
+            </div>
+
             <div class="hyd" id="hyd">
-                <a id="car1" href="createCar.html">
-                    <img src="/projectImg/넥쏘.png" alt="">
+                <a id="car1" href="#">
+                    <img src="../projectImg/넥쏘.png" alt="">
                     <h3>넥쏘</h3> <br>
                     <p>6,950만원 ~</p>
                 </a>
                 <a id="car2" href="#">
-                    <img src="/projectImg/디올뉴코나E.png" alt="">
+                    <img src="../projectImg/디올뉴코나E.png" alt="">
                     <h3>디 올 뉴 코나 Erectric</h3> <br>
                     <p>4,452만원 ~</p>
                 </a>
-                <a id="car3" href="createCar.html">
-                    <img src="/projectImg/아이오닉6.png" alt="">
+                <a id="car3" href="javascript:link()">
+                    <img src="../projectImg/아이오닉6.png" alt="">
                     <h3>아이오닉6</h3> <br>
                     <p>5,200만원 ~</p>
                 </a>
-                <a id="car4" href="createCar.html">
-                    <img src="/projectImg/아이오닉5.png" alt="">
+                <a id="car4" href="javascript:link()">
+                    <img src="../projectImg/아이오닉5.png" alt="">
                     <h3>아이오닉5</h3> <br>
                     <p>5,005만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/포터2일렉트릭.png" alt="">
+                <a id="car5" href="#">
+                    <img src="../projectImg/포터2일렉트릭.png" alt="">
                     <h3>포터 II Electric</h3> <br>
                     <p>4,375만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/포터2일렉트릭내장.png" alt="">
+                <a id="car6" href="#">
+                    <img src="../projectImg/포터2일렉트릭내장.png" alt="">
                     <h3>포터 II Electric 내장탑차</h3> <br>
                     <p>4,380만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/포터2윙바디.png" alt="">
+                <a id="car7" href="#">
+                    <img src="../projectImg/포터2윙바디.png" alt="">
                     <h3>포터 II Electric 윙바디</h3> <br>
                     <p>4,567만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/포터2파워게이트.png" alt="">
+                <a id="car8" href="#">
+                    <img src="../projectImg/포터2파워게이트.png" alt="">
                     <h3>포터 II Electric 파워게이트</h3> <br>
                     <p>4,466만원 ~</p>
                 </a>
@@ -128,33 +141,33 @@
 
 
             <div class="sedan" id="sedan" style="display: none;">
-                <a href="#">
-                    <img src="/projectImg/더뉴아반떼.png" alt="">
+                <a id="car9" href="javascript:link()">
+                    <img src="../projectImg/더뉴아반떼.png" alt="">
                     <h3>더 뉴 아반떼</h3> <br>
                     <p>1,975만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/아반떼하이브리드.png" alt="">
+                <a id="car10" href="#">
+                    <img src="../projectImg/아반떼하이브리드.png" alt="">
                     <h3>더 뉴 아반떼 Hybrid</h3> <br>
                     <p>2,466만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/소나타디엣지.png" alt="">
+                <a id="car11" href="javascript:link()">
+                    <img src="../projectImg/소나타디엣지.png" alt="">
                     <h3>소나타 디 엣지</h3> <br>
                     <p>2,808만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/소나타하이브리드.png" alt="">
+                <a id="car12" href="#">
+                    <img src="../projectImg/소나타하이브리드.png" alt="">
                     <h3>소나타 디 엣지 Hybrid</h3> <br>
                     <p>3,187만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/디올뉴그랜저.png" alt="">
+                <a id="car13" href="#">
+                    <img src="../projectImg/디올뉴그랜저.png" alt="">
                     <h3>디 올 뉴 그랜저</h3> <br>
                     <p>3,743만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/그랜저하이브리드.png" alt="">
+                <a id="car14" href="#">
+                    <img src="../projectImg/그랜저하이브리드.png" alt="">
                     <h3>디 올 뉴 그랜저 Hybrid</h3> <br>
                     <p>4,266만원 ~</p>
                 </a>
@@ -163,48 +176,50 @@
 
 
             <div class="suv" id="suv" style="display: none;">
-                <a href="#">
-                    <img src="/projectImg/베뉴.png" alt="">
+                <a id="car15" href="#">
+                    <img src="../projectImg/베뉴.png" alt="">
                     <h3>베뉴</h3> <br>
                     <p>2,146만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/팰리세이드.png" alt="">
+                <a id="car16" href="javascript:link()">
+                    <img src="../projectImg/팰리세이드.png" alt="">
                     <h3>팰리세이드</h3> <br>
                     <p>3,896만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/디올뉴산타페.png" alt="">
-                    <h3>디 올 뉴 산타페</h3> <br>
+                <a id="car17" href="javascript:link()">
+                    <img src="../projectImg/디올뉴산타페.png" alt="">
+                    <h3>디 올 뉴 싼타페</h3> <br>
                     <p>3,546만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/산타페하이브리드.png" alt="">
-                    <h3>디 올 뉴 산타페 Hybrid</h3> <br>
+                <a id="car18" href="#">
+                    <img src="../projectImg/산타페하이브리드.png" alt="">
+                    <h3>디 올 뉴 싼타페 Hybrid</h3> <br>
                     <p>4,000만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/투싼.png" alt="">
+                <a id="car19" href="#">
+                    <img src="../projectImg/투싼.png" alt="">
                     <h3>투싼</h3> <br>
                     <p>2,603만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/투싼하이브리드.png" alt="">
+                <a id="car20" href="#">
+                    <img src="../projectImg/투싼하이브리드.png" alt="">
                     <h3>투싼 Hybrid</h3> <br>
                     <p>3,027만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/디올뉴코나.png" alt="">
+                <a id="car21" href="#">
+                    <img src="../projectImg/디올뉴코나.png" alt="">
                     <h3>디 올 뉴 코나</h3> <br>
                     <p>2,486만원 ~</p>
                 </a>
-                <a href="#">
-                    <img src="/projectImg/코나하이브리드.png" alt="">
+                <a id="car22" href="#">
+                    <img src="../projectImg/코나하이브리드.png" alt="">
                     <h3>디 올 뉴 코나 Hybrid</h3> <br>
                     <p>2,999만원 ~</p>
                 </a>
             </div>
         </div>
+
+
         <ul class="list">
             <li>본 견적내기 서비스의 차량 외관 및 색상은 실제 차량과는 차이가 있을 수 있으므로,
                 반드시 카탈로그 및 가격표 확인 부탁드리며 자세한 내용은 카마스터에 문의하시길 바랍니다.</li>
@@ -231,7 +246,7 @@
 
 
             <div>
-                <img id="footerLogo" src="/pictures/footer_logo.png" alt="">
+                <img id="footerLogo" src="../pictures/footer_logo.png" alt="">
             </div>
 
             <div class="footerMenu1">
@@ -263,13 +278,13 @@
 
             <div class="footerMenu2">
                 <ul class="footerList5">
-                    <li><img src="/pictures/로고1.png" alt="" width="20"></li>
-                    <li><img src="/pictures/로고2.png" alt="" width="20"></li>
-                    <li><img src="/pictures/로고3.png" alt="" width="13" height="20"></li>
-                    <li><img src="/pictures/로고4.png" alt="" width="20"></li>
-                    <li><img src="/pictures/로고5.png" alt="" width="20"></li>
-                    <li><img src="/pictures/로고6.png" alt="" width="20"></li>
-                    <li><img src="/pictures/로고7.png" alt="" width="20"></li>
+                    <li><img src="../pictures/로고1.png" alt="" width="20"></li>
+                    <li><img src="../pictures/로고2.png" alt="" width="20"></li>
+                    <li><img src="../pictures/로고3.png" alt="" width="13" height="20"></li>
+                    <li><img src="../pictures/로고4.png" alt="" width="20"></li>
+                    <li><img src="../pictures/로고5.png" alt="" width="20"></li>
+                    <li><img src="../pictures/로고6.png" alt="" width="20"></li>
+                    <li><img src="../pictures/로고7.png" alt="" width="20"></li>
                 </ul>
             </div>
 
@@ -278,28 +293,28 @@
 
         <div class="footerContainer2">
             <ul class="footerList6">
-                <li><img src="/pictures/로고8.png" alt=""><span>웹 접근성 품질인증</span></li>
-                <li><img src="/pictures/로고9.png" alt=""><span>
+                <li><img src="../pictures/로고8.png" alt=""><span>웹 접근성 품질인증</span></li>
+                <li><img src="../pictures/로고9.png" alt=""><span>
                         우수디자인 지식경제부선정
                     </span> </li>
-                <li><img src="/pictures/로고10.png" alt=""><span>
+                <li><img src="../pictures/로고10.png" alt=""><span>
                         가족친화 우수기관
                     </span></li>
-                <li><img src="/pictures/로고11.png" alt=""><span>
+                <li><img src="../pictures/로고11.png" alt=""><span>
                         2022년 한국서비스품질지수 (KS- <br>
                         SQI) 자동차 A/S 부문 8년 연속 1위
                     </span></li>
-                <li><img src="/pictures/로고12.png" alt=""><span>
+                <li><img src="../pictures/로고12.png" alt=""><span>
                         2022년 한국품질만족지수 (KS- <br>
                         QEI) 조사 12개 부문 1위
                     </span></li>
-                <li><img src="/pictures/로고13.png" alt=""><span>
+                <li><img src="../pictures/로고13.png" alt=""><span>
                         2023년 국가고객만족도(NCSI) <br>
                         조사 대상 전 부문 1위 수상 (준중형, <br>
                         중형, 준대형, 대형, 컴팩트RV, <br>
                         대형RV, 전기차)
                     </span></li>
-                <li><img src="/pictures/로고14.png" alt=""><span>
+                <li><img src="../pictures/로고14.png" alt=""><span>
                         KMAC 선정<br>
                         2022년 한국산업의 고객만족도<br>
                         일반승용차 부문 29년 연속<br>

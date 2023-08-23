@@ -1,7 +1,49 @@
 
 //데이터 받아오기////////////
 const carName = localStorage.getItem('key');
+nameStart();
 
+function nameStart() {
+
+    if (carName == '아이오닉5' || carName == '아이오닉6') {
+        document.getElementById('carName1').innerHTML = `　|　${carName}`;
+        document.getElementById('carName2').innerHTML = `나의 ${carName}`;
+        document.getElementById('carName3').innerHTML = `${carName} - Exclusive(스탠다드) 19인치`;
+        document.getElementById('carName4').innerHTML = `${carName} 전기차 Exclusive(스탠다드) 19인치 오토`;
+        document.getElementById('carName5').innerHTML = `나의 ${carName} (이)가 완성되었습니다!`;
+        document.getElementById('carName6').innerHTML = `${carName} 전기차 Exclusive(스탠다드) 19인치 오토`;
+    } else if (carName == '아반떼') {
+        document.getElementById('carName1').innerHTML = `　|　${carName}`;
+        document.getElementById('carName2').innerHTML = `나의 ${carName}`;
+        document.getElementById('carName3').innerHTML = `더 뉴 ${carName} - Smart`;
+        document.getElementById('carName4').innerHTML = `더 뉴 ${carName} 자가용 가솔린 1.6 Smart A/T`;
+        document.getElementById('carName5').innerHTML = `나의 더 뉴 ${carName} (이)가 완성되었습니다!`;
+        document.getElementById('carName6').innerHTML = `더 뉴 ${carName} 자가용 가솔린 1.6 Smart A/T`;
+    } else if (carName == '소나타') {
+        document.getElementById('carName1').innerHTML = `　|　${carName}`;
+        document.getElementById('carName2').innerHTML = `나의 ${carName}`;
+        document.getElementById('carName3').innerHTML = `${carName} 디 엣지 - Premium`;
+        document.getElementById('carName4').innerHTML = `${carName} 디 엣지 자가용 가솔린 1.6T-GDi Premium`;
+        document.getElementById('carName5').innerHTML = `나의 ${carName} (이)가 완성되었습니다!`;
+        document.getElementById('carName6').innerHTML = `${carName} 디 엣지 자가용 가솔린 1.6T-GDi Premium`;
+
+    } else if (carName == '팰리세이드') {
+        document.getElementById('carName1').innerHTML = `　|　${carName}`;
+        document.getElementById('carName2').innerHTML = `나의 ${carName}`;
+        document.getElementById('carName3').innerHTML = `${carName} - Exclusive`;
+        document.getElementById('carName4').innerHTML = `${carName} 팰리세이드 디젤 2.2 2WD Exclusive 7인승`;
+        document.getElementById('carName5').innerHTML = `나의 ${carName} (이)가 완성되었습니다!`;
+        document.getElementById('carName6').innerHTML = `${carName} 팰리세이드 디젤 2.2 2WD Exclusive 7인승`;
+
+    } else if (carName == '싼타페') {
+        document.getElementById('carName1').innerHTML = `　|　${carName}`;
+        document.getElementById('carName2').innerHTML = `나의 ${carName}`;
+        document.getElementById('carName3').innerHTML = `${carName} - Exclusive`;
+        document.getElementById('carName4').innerHTML = `${carName} 디 올 뉴 싼타페 가솔린 2.5T 2WD 오토 익스클루시브 5인승`;
+        document.getElementById('carName5').innerHTML = `나의 ${carName} (이)가 완성되었습니다!`;
+        document.getElementById('carName6').innerHTML = `${carName} 디 올 뉴 싼타페 가솔린 2.5T 2WD 오토 익스클루시브 5인승`;
+    }
+}
 
 ///////////////
 
@@ -40,7 +82,7 @@ mainExit.addEventListener('click', () => {
 const resultBtn1 = document.getElementById('resultBtn1');
 const resultBtn2 = document.getElementById('resultBtn2');
 resultBtn1.addEventListener('click', () => {
-    window.location.href = "/NEW_project/main.html";
+    window.location.href = "../NEW_project/main.html";
 })
 resultBtn2.addEventListener('click', () => {
     exitBox.style.display = 'none';
@@ -54,7 +96,7 @@ let carPage = 1;
 const carModel = document.getElementById('carModel');
 const leftBtn = document.getElementById('leftBtn');
 const rightBtn = document.getElementById('rightBtn');
-carModel.innerHTML = `<img id="modelView" src="/pictures/${carName}${carNum}/${carPage}.png">`;
+carModel.innerHTML = `<img id="modelView" src="../pictures/${carName}${carNum}/${carPage}.png">`;
 function incre() {
     if (carPage == 60) {
         carPage = 1;
@@ -72,7 +114,7 @@ function decre() {
 }
 function startParg() {
     for (let i = 1; i <= 60; i++) {
-        carModel.innerHTML = `<img id="modelView${i}" src="/pictures/${carName}${carNum}/${i}.png">`;
+        carModel.innerHTML = `<img id="modelView${i}" src="../pictures/${carName}${carNum}/${i}.png">`;
         document.getElementById(`modelView${i}`).style.display = "none";
     }
 }
@@ -81,12 +123,12 @@ function startParg() {
 leftBtn.addEventListener('click', () => {
     incre();
     startParg();
-    carModel.innerHTML = `<img id="modelView" src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    carModel.innerHTML = `<img id="modelView" src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 rightBtn.addEventListener('click', () => {
     decre();
     startParg();
-    carModel.innerHTML = `<img id="modelView" src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    carModel.innerHTML = `<img id="modelView" src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 
 // CarModel 시작
@@ -102,7 +144,7 @@ outCarColor1.addEventListener('click', () => {
     outMarkOff(2);
     outMarkOff(3);
     startParg();
-    carModel.innerHTML = `<img id="modelView" src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    carModel.innerHTML = `<img id="modelView" src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 outCarColor2.addEventListener('click', () => {
     carNum = 2;
@@ -110,7 +152,7 @@ outCarColor2.addEventListener('click', () => {
     outMarkOn(2);
     outMarkOff(3);
     startParg();
-    carModel.innerHTML = `<img id="modelView" src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    carModel.innerHTML = `<img id="modelView" src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 outCarColor3.addEventListener('click', () => {
     carNum = 3;
@@ -118,7 +160,7 @@ outCarColor3.addEventListener('click', () => {
     outMarkOff(2);
     outMarkOn(3);
     startParg();
-    carModel.innerHTML = `<img id="modelView" src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    carModel.innerHTML = `<img id="modelView" src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 
 function outMarkOn(e) {
@@ -142,7 +184,7 @@ inCarColor1.addEventListener('click', () => {
     inMarkOn(1);
     inMarkOff(2);
     document.getElementById('outColorBgc').innerHTML = `
-    <img src="/pictures/내장배경1.png" alt="">
+    <img src="../pictures/내장배경1.png" alt="">
     <button id="outBtn" type="button">X</button>
     `;
     document.getElementById('outBtn').addEventListener('click', () => {
@@ -154,7 +196,7 @@ inCarColor2.addEventListener('click', () => {
     inMarkOff(1);
     inMarkOn(2);
     document.getElementById('outColorBgc').innerHTML = `
-    <img src="/pictures/내장배경2.png" alt="">
+    <img src="../pictures/내장배경2.png" alt="">
     <button id="outBtn" type="button">X</button>
     `;
     document.getElementById('outBtn').addEventListener('click', () => {
@@ -202,8 +244,8 @@ document.getElementById('resultBtn').addEventListener('click', () => {
         document.getElementById('headerTitleText3').innerHTML = '|　　03　　차량 완성';
         document.getElementById('section1').style.display = 'none';
         document.getElementById('section2').style.display = 'block';
-        modelBox1.innerHTML = `<img src="/pictures/${carName}${carNum}/${carPage}.png">`;
-    }, 3000);
+        modelBox1.innerHTML = `<img src="../pictures/${carName}${carNum}/${carPage}.png">`;
+    }, 2000);
 
 
 
@@ -225,12 +267,12 @@ const rightBtn5 = document.getElementById('rightBtn5');
 leftBtn5.addEventListener('click', () => {
     incre();
     startParg();
-    modelBox1.innerHTML = `<img src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    modelBox1.innerHTML = `<img src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 rightBtn5.addEventListener('click', () => {
     decre();
     startParg();
-    modelBox1.innerHTML = `<img src="/pictures/${carName}${carNum}/${carPage}.png">`;
+    modelBox1.innerHTML = `<img src="../pictures/${carName}${carNum}/${carPage}.png">`;
 })
 
 
@@ -239,9 +281,3 @@ rightBtn5.addEventListener('click', () => {
 
 
 
-document.getElementById('carName1').innerHTML = `　|　${carName}`;
-document.getElementById('carName2').innerHTML = `나의 ${carName}`;
-document.getElementById('carName3').innerHTML = `${carName} - Exclusive(스탠다드) 19인치`;
-document.getElementById('carName4').innerHTML = `${carName} 전기차 Exclusive(스탠다드) 19인치 오토`;
-document.getElementById('carName5').innerHTML = `나의 ${carName} (이)가 완성되었습니다!`;
-document.getElementById('carName6').innerHTML = `${carName} 전기차 Exclusive(스탠다드) 19인치 오토`;

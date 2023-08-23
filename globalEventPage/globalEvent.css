@@ -1,21 +1,21 @@
 @font-face {
     font-family: harmonyB;
-    src: url(/font/현대하모니+B.ttf);
+    src: url(../font/현대하모니+B.ttf);
 }
 
 @font-face {
     font-family: harmonyL;
-    src: url(/font/현대하모니+L.ttf);
+    src: url(../font/현대하모니+L.ttf);
 }
 
 @font-face {
     font-family: harmonyM;
-    src: url(/font/현대하모니+M.ttf);
+    src: url(../font/현대하모니+M.ttf);
 }
 
 @font-face {
     font-family: "고딕";
-    src: url(/font/NanumGothic-Regular.ttf);
+    src: url(../font/NanumGothic-Regular.ttf);
 }
 
 
@@ -85,34 +85,34 @@ a {
 .box1 {
     width: calc((100% / 3) * 2);
     height: 500px;
-    background-image: url(/teamProjectImg/box1.jpg);
+    background-image: url(../teamProjectImg/box1.jpg);
     float: left;
 }
 
 .box2 {
     width: calc(100% / 3);
     height: 1000px;
-    background-image: url(/teamProjectImg/box2.jpg);
+    background-image: url(../teamProjectImg/box2.jpg);
     float: right
 }
 
 .box3 {
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box3.jpg);
+    background-image: url(../teamProjectImg/box3.jpg);
     float: left
 }
 
 .box4 {
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box4.jpg);
+    background-image: url(../teamProjectImg/box4.jpg);
 }
 
 .box5 {
     width: calc(100% / 3);
     height: 1000px;
-    background-image: url(/teamProjectImg/box5.jpg);
+    background-image: url(../teamProjectImg/box5.jpg);
     float: left;
 }
 
@@ -120,27 +120,27 @@ a {
     float: left;
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box6.jpg);
+    background-image: url(../teamProjectImg/box6.jpg);
 }
 
 .box7 {
     float: right;
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box7.jpg);
+    background-image: url(../teamProjectImg/box7.jpg);
 }
 
 .box8 {
     width: calc((100% / 3) * 2);
     height: 500px;
-    background-image: url(/teamProjectImg/box8.jpg);
+    background-image: url(../teamProjectImg/box8.jpg);
     float: right;
 }
 
 .box9 {
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box9.jpg);
+    background-image: url(../teamProjectImg/box9.jpg);
     float: left;
 }
 
@@ -148,14 +148,14 @@ a {
     float: left;
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box10.jpg);
+    background-image: url(../teamProjectImg/box10.jpg);
 }
 
 .box11 {
     float: left;
     width: calc(100% / 3);
     height: 500px;
-    background-image: url(/teamProjectImg/box11.jpg);
+    background-image: url(../teamProjectImg/box11.jpg);
 }
 
 /*img 박스 filter hover*/
@@ -360,7 +360,7 @@ li {
 
 header {
     position: fixed;
-    background-image: url(/pictures/bgc투명.png);
+    background-image: url(../pictures/bgc투명.png);
     height: 80px;
     width: 100%;
     z-index: 10;
@@ -394,14 +394,13 @@ header {
 /* 메인[일반메뉴1 div] */
 #mainLogo {
     cursor: pointer;
+    width: 250px;
+    height: 30px;
     margin-left: 250px;
     margin-top: 25px;
-
 }
 
-.loginContainer {
-    
-}
+.loginContainer {}
 
 
 .boxContainer,
@@ -415,7 +414,7 @@ header {
 .boxContainer {
     margin-right: 20px;
     margin-left: 20px;
-      margin-left: -100px;
+    margin-left: -100px;
 }
 
 

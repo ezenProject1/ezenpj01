@@ -2,34 +2,34 @@
 
 @font-face {
     font-family: "현대폰트";
-    src: url(/font/현대하모니+L.ttf);
+    src: url(../font/현대하모니+L.ttf);
 }
 
 @font-face {
     font-family: "현대폰트m";
-    src: url(/font/현대하모니+M.ttf);
+    src: url(../font/현대하모니+M.ttf);
 }
 
 
 @font-face {
     font-family: "현대폰트b";
-    src: url(/font/현대하모니+B.ttf);
+    src: url(../font/현대하모니+B.ttf);
 }
 
 
 @font-face {
     font-family: "나눔고딕";
-    src: url(/font/NanumGothic-Regular.ttf);
+    src: url(../font/NanumGothic-Regular.ttf);
 }
 
 @font-face {
     font-family: "나눔고딕eb";
-    src: url(/font/NanumGothic-ExtraBold.ttf);
+    src: url(../font/NanumGothic-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: "나눔고딕b";
-    src: url(/font/NanumGothic-Bold.ttf);
+    src: url(../font/NanumGothic-Bold.ttf);
 }
 
 html {
@@ -57,6 +57,10 @@ footer {
 
 }
 
+
+#mainLogo {
+    margin-top: -5px;
+}
 
 
 .footerContainer {
@@ -333,7 +337,7 @@ header {
     width: 100%;
     height: 1000px;
     background-size: cover;
-    background-image: url(/pictures/차량용배경2.jpg);
+    background-image: url(../pictures/차량용배경2.jpg);
     background-repeat: no-repeat;
     display: flex;
 }
@@ -345,7 +349,7 @@ header {
 .carStateContainer {
     width: 30%;
     border-left: 3px solid white;
-    background-image: url(/pictures/차만들기배경.jpg);
+    background-image: url(../pictures/차만들기배경.jpg);
 }
 
 #carModelList {
@@ -410,7 +414,7 @@ header {
     top: 50px;
     left: -100px;
     height: 500px;
-    background-image: url(/pictures/360도bgc.png);
+    background-image: url(../pictures/360도bgc.png);
     background-repeat: no-repeat;
     z-index: 0;
 }
@@ -549,11 +553,11 @@ header {
 
 
 #inCarColor1 {
-    background-image: url(/pictures/아이오닉_내장색상1.png);
+    background-image: url(../pictures/아이오닉_내장색상1.png);
 }
 
 #inCarColor2 {
-    background-image: url(/pictures/아이오닉_내장색상2.png);
+    background-image: url(../pictures/아이오닉_내장색상2.png);
 }
 
 
@@ -594,7 +598,7 @@ section2 {
     position: relative;
     width: 100%;
     height: 1000px;
-    background-image: url(/pictures/차만들기배경.jpg);
+    background-image: url(../pictures/차만들기배경.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: '현대폰트b';
@@ -653,7 +657,7 @@ section2 {
     display: none;
     position: absolute;
     background-color: white;
-    background-image: url(/pictures/로딩.gif);
+    background-image: url(../pictures/로딩.gif);
     background-position: 75px 25px;
     background-repeat: no-repeat;
     border-radius: 10px;

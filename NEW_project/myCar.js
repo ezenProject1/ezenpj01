@@ -1,3 +1,8 @@
+
+
+
+
+
 /*********************************************************/
 
 let searchSwitch = 0;
@@ -81,28 +86,54 @@ carList3.addEventListener('click', () => {
 
 })
 
-// let tmp = 0;
-// document.getElementById('carBtn').addEventListener('click', () => {
-//      if (tmp == 0) {
-//           document.getElementById('carBtn').innerText = 'V';
-//           document.getElementById('carBtn').style.color = 'white';
-//           document.getElementById('carBtn').style.backgroundColor = 'rgb(0,127,168)';
-//           document.getElementById('carBtn').style.border = 'none';
-//           tmp = -1;
-//      } else {
-//           document.getElementById('carBtn').innerText = '';
-//           document.getElementById('carBtn').style.color = '';
-//           document.getElementById('carBtn').style.backgroundColor = '';
-//           document.getElementById('carBtn').style.border = '';
-//           tmp = 0;
-//      }
 
-// })
+// 로딩창
+function loadingBox() {
+     document.getElementById('loadingBox1').style.display = "block";
+     document.getElementById('bgcOverray').style.height = "1400px";
+     document.getElementById('bgcOverray').style.backgroundColor = "rgb(0, 0, 0, 0.7)";
+     setTimeout(function () {
+          document.getElementById('bgcOverray').style.height = "0";
+          document.getElementById('loadingBox1').style.display = "none";
+          location.href = 'createCar.html';
+     }, 2000);
+
+}
+
 
 document.getElementById('car3').addEventListener('click', () => {
+     loadingBox();
      localStorage.setItem('key', '아이오닉6');
 })
 
 document.getElementById('car4').addEventListener('click', () => {
+     loadingBox();
      localStorage.setItem('key', '아이오닉5');
 })
+
+
+document.getElementById('car9').addEventListener('click', () => {
+     loadingBox();
+     localStorage.setItem('key', '아반떼');
+})
+
+document.getElementById('car11').addEventListener('click', () => {
+     loadingBox();
+     localStorage.setItem('key', '소나타');
+})
+
+document.getElementById('car16').addEventListener('click', () => {
+     loadingBox();
+     localStorage.setItem('key', '팰리세이드');
+})
+
+document.getElementById('car17').addEventListener('click', () => {
+     loadingBox();
+     localStorage.setItem('key', '싼타페');
+})
+
+
+
+
+
+
