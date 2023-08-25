@@ -112,6 +112,7 @@ function decre() {
         carPage--;
     }
 }
+// 이미지 미리 렌더링
 function startParg() {
     for (let i = 1; i <= 60; i++) {
         carModel.innerHTML = `<img id="modelView${i}" src="../pictures/${carName}${carNum}/${i}.png">`;
